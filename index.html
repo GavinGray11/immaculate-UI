@@ -10,28 +10,30 @@
     <title>Immaculate-UI</title>
 
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom-styles.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Varela+Round&display=swap"
+        rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
     </script>
+
+
 </head>
 
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <nav class="sb-topnav navbar navbar-expand navbar-back shadow-lg p-3 mb-5">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">Immaculate-UI</a>
+        <a class="navbar-brand ps-3 font" href="index.html">Immaculate-UI</a>
         <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 text-color" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
-                    aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i
-                        class="fas fa-search"></i></button>
-            </div>
+
         </form>
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
@@ -39,13 +41,13 @@
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#!">Settings</a></li>
-                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li><a class="dropdown-item font" href="#!">Settings</a></li>
+                    <li><a class="dropdown-item font" href="#!">Activity Log</a></li>
                     <li>
                         <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item" href="#!">Sign in</a></li>
-                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    <li><a class="dropdown-item font" href="#!">Sign in</a></li>
+                    <li><a class="dropdown-item font" href="#!">Logout</a></li>
                 </ul>
             </li>
         </ul>
@@ -53,39 +55,36 @@
 
 
 
-    <div id="layoutSidenav">
-
-        <div id="layoutSidenav_nav">
-            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+    <div id="layoutSidenav" class="sidebar">
+        <div id="layoutSidenav_nav" class="sidebar">
+            <nav class="sb-sidenav accordion color-primary" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
 
 
-                    <div class="nav">
-
-                        <div class="sb-sidenav-menu-heading">Core</div>
-                        <button class="nav-link active btn-dark" href="index.html" id="v-pills-home-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                            aria-selected="true">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="nav flex-column nav-pills mx-4" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <div class="sb-sidenav-menu-heading ps-0 font">Core</div>
+                        <button class="nav-link active color-secondary text-light font" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
                             Dashboard
                         </button>
 
-                        <button class="nav-link btn-dark" id="v-pills-profile-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                            aria-selected="true">Static Navigation</button>
+                        <button class="nav-link color-secondary font" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#component1" type="button" role="tab" aria-controls="profile"
+                            aria-selected="false">Static
+                            Navigation</button>
 
 
-                            <!-- Interface-->
+                        <!-- Interface-->
 
-                        <div class="sb-sidenav-menu-heading">Interface</div>
-                      
-                        <button class="nav-link btn-dark" id="v-pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-staticNav" type="button" role="tab"
-                        aria-controls="v-pills-staticNav" aria-selected="true">Static Navigation</button>
+                        <div class="sb-sidenav-menu-heading ps-0 font">Interface</div>
+
+                        <button class="nav-link font" id="profile-tab" data-bs-toggle="tab" data-bs-target="#component2"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">Component</button>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                               
+
 
                             </nav>
                         </div>
@@ -102,24 +101,25 @@
 
         <!-- VIEWS-->
         <div id="layoutSidenav_content">
-            <main>
-                
+            <main class="container-fluid ">
+
                 <div class="tab-content show active" id="v-pills-tabContent">
                     <!-- VIEW1-->
-                    <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <div class="container">
-                            <h1>Get started with Bootstrap</h1>
-                            <p class="fs-5 col-md-8">Quickly and easily get started with Bootstrap's compiled,
+                    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="container justify-content-center">
+                            <h1 class=" d-flex justify-content-center mt-5">Get started with Bootstrap</h1>
+                            <p class="d-flex justify-content-center ">Quickly and easily get started with Bootstrap's
+                                compiled,
                                 production-ready files with this barebones example featuring some basic HTML and helpful
                                 links. Download all our examples to get started.</p>
 
-                            <div class="mb-5">
+                            <div class=" d-flex justify-content-center mb-5">
                                 <a href="../examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
                             </div>
 
                             <hr class="col-3 col-md-2 mb-5">
 
-                            <div class="row g-5">
+                            <div class="d-flex justify-content-centerrow g-5">
                                 <div class="col-md-6">
                                     <h2>Starter projects</h2>
                                     <p>Ready to beyond the starter template? Check out these open source projects that
@@ -148,21 +148,19 @@
                         </div>
                     </div>
                     <!-- VIEW2-->
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab">
+                    <div class="tab-pane" id="component1" role="tabpanel" aria-labelledby="component1">
                         HELLO WORLD2
                     </div>
 
-                     <!-- VIEW3-->
-                     <div class="tab-pane fade" id="v-pills-staticNav" role="tabpanel"
-                     aria-labelledby="v-pills-staticNav">
-                     HELLO WORLD3
-                 </div>
+                    <!-- VIEW3-->
+                    <div class="tab-pane" id="component2" role="tabpanel" aria-labelledby="component2">
+                        HELLO WORLD3
+                    </div>
 
 
                 </div>
             </main>
-            <footer class="py-4 bg-light mt-auto">
+            <footer class="py-4 bg-light">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
                         <div class="text-muted">Copyright &copy; Your Website 2021</div>
@@ -183,6 +181,8 @@
     <script src="js/scripts.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+
+
 
 </body>
 
