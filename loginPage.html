@@ -2,16 +2,18 @@
 <head>
   <title>Firebase Login</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/loginStyle.css" />
 </head>
 <body>
 
   <div id="login_div" class="main-div">
-    <h3>User Login</h3>
+    <h3>Immaculate-UI Login</h3>
     <input type="email" placeholder="Email..." id="email_field" />
     <input type="password" placeholder="Password..." id="password_field" />
 
     <button onclick="login()">Login to Account</button>
+
+    <button onclick="unhideCreate()">Click to Create Account</button>
   </div>
 
   <div id="user_div" class="loggedin-div">
@@ -22,7 +24,7 @@
 
 
   <div id="createUser_div" class="Create-div">
-    <h3>Create User</h3>
+    <h3>Create an Immaculate-UI Account</h3>
     <input type="email" placeholder="Email..." id="create_email_field" />
     <input type="password" placeholder="Password..." id="create_password_field" />
 
