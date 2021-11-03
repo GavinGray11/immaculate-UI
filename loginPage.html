@@ -2,12 +2,12 @@
 <head>
   <title>Firebase Login</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <div id="login_div" class="main-div">
-    <h3>Firebase Web login Example</h3>
+    <h3>User Login</h3>
     <input type="email" placeholder="Email..." id="email_field" />
     <input type="password" placeholder="Password..." id="password_field" />
 
@@ -21,17 +21,18 @@
   </div>
 
 
-  <div id="createUser_div" class="main-div">
-    <h3>Firebase Web login Example</h3>
-    <input type="email" placeholder="Email..." id="email_field" />
-    <input type="password" placeholder="Password..." id="password_field" />
+  <div id="createUser_div" class="Create-div">
+    <h3>Create User</h3>
+    <input type="email" placeholder="Email..." id="create_email_field" />
+    <input type="password" placeholder="Password..." id="create_password_field" />
 
     <button onclick="createUser()">Create Account</button>
   </div>
 
 
 
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
   <script>
     // Initialize Firebase
     var config = {
@@ -52,7 +53,7 @@
     };
     firebase.initializeApp(config);
   </script>
-  <script src="js\index.js"></script>
+  <script src="js\firebaselogin.js"></script>
 
 </body>
 </html>

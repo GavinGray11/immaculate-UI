@@ -60,8 +60,8 @@ function logout(){
 
 function createUser(){
 
-  var userEmail = document.getElementById("email_field").value;
-  var userPass = document.getElementById("password_field").value;
+  var userEmail = document.getElementById("create_email_field").value;
+  var userPass = document.getElementById("create_password_field").value;
 
   firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function(error) {
     // Handle Errors here.
