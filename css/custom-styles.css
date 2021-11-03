@@ -1,5 +1,5 @@
 .color-primary {
-  background-color: #0455BF;
+  background-color: #171923;
   color: white !important;
 }
 
@@ -18,10 +18,7 @@
   color: white !important;
 }
 
-.navbar-back {
-  background-color: #0455BF !important;
-  color: white !important;
-}
+
 
 .navbar-brand {
   color: white !important;
@@ -42,4 +39,28 @@
   font-family: 'Roboto', sans-serif !important;
   font-family: 'Varela Round', sans-serif !important;
   letter-spacing: .5px;
+  font-weight: bold;
+}
+
+.bg-tab-color {
+background-color: #f7fafc;
+color: black;
+}
+
+.jumb-color {
+  background-color: #171923;
+  color: black;
+}
+
+.jumbo-color-example {
+  background-color: #171923;
+  color: black;
+}
+
+.border-color {
+  background-color: #b9bbbd;
+}
+
+.code-color {
+  color: #66fcf1;
 }
