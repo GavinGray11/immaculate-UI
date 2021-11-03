@@ -13,8 +13,18 @@ firebase.auth().onAuthStateChanged(function(user) {
       var email_id = user.email;
       document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
 
-    }
+      
 
+      const state = { 'page_id': 1, 'user_id': 5 }
+      const title = ''
+      const url = '../index.html'
+
+      console.log('changing history')
+
+      // window.location = 'http://127.0.0.1:5500/index.html'
+
+      document.getElementById("userAccount").innerHTML = email_id
+    }
   } else {
     // No user is signed in.
 
