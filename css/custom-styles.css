@@ -18,8 +18,6 @@
   color: white !important;
 }
 
-
-
 .navbar-brand {
   color: white !important;
 }
@@ -69,7 +67,7 @@ color: black;
 
 .code-panel {
   border: 1px solid rgb(0, 0, 0);
-  background-color: rgb(22, 22, 22);
+  background-color: #171923;
   border-radius: 5px;
   text-align: auto;
   margin: 10px auto;
@@ -79,7 +77,7 @@ color: black;
 }
 
 .code-panel:hover {
-  background-color: rgb(73, 73, 73);
+  background-color: #2d3144;
 }
 
 .code-text::selection {
@@ -89,10 +87,14 @@ color: black;
 .code-text {
   text-align: left;
   font-family: Consolas,"courier new";
-  color: rgb(255, 255, 255);
+  color: #66fcf1;
   background-color: transparent;
   padding: 10px;
   font-size: 20px;
+}
+
+.code-back {
+  background-color: rgb(247, 231, 234);
 }
 
 .code-h2 {
@@ -118,7 +120,7 @@ color: black;
 code {
   font-family: Consolas,"courier new";
   color: crimson;
-  background-color: #f1f1f1;
+  background-color: transparent;
   padding: 2px;
   font-size: 105%;
   border-radius: 5px;
