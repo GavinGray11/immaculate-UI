@@ -64,3 +64,63 @@ color: black;
 .code-color {
   color: #66fcf1;
 }
+
+/*---------------------------------------------------------------*/
+
+.code-panel {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(22, 22, 22);
+  border-radius: 5px;
+  text-align: auto;
+  margin: 10px auto;
+  padding: 5px;
+  width: auto;
+  transition-duration: 0.5s;
+}
+
+.code-panel:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+.code-text::selection {
+  background: chocolate;
+}
+
+.code-text {
+  text-align: left;
+  font-family: Consolas,"courier new";
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.code-h2 {
+  text-align: center;
+  margin: 10px auto;
+  padding: 5px;
+  width: 500px;
+  color: rgb(22, 22, 22);
+}
+.code-center {
+  margin: 0px auto;
+  width: 50%;
+  /* border: 3px solid green; */
+}
+.code-p {
+  text-align: left;
+  margin: 10px 115px;
+  padding: 5px;
+  width: auto;
+  color: rgb(34, 34, 34);
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+  border-radius: 5px;
+}
+

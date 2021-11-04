@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+/* * {
+    font-family: 'Josefin Sans', sans-serif;
+} */
+
+.imma-button {
+    background-color: #f1f1f1; /* Green */
+    color: rgb(0, 0, 0);
+    
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    letter-spacing: .1rem;
+    font-weight: 550;
+    /* box-shadow: -3px 3px rgb(0, 0, 0), -2px 2px rgb(0, 0, 0), -1px 1px rgb(0, 0, 0); */
+    border: 2px solid rgb(0, 0, 0);
+    margin: 0px 3px;
+}
+
+.imma-button:hover {
+    background-color: #c7c7c7;
+    transform: scale(1.01);
+    color: rgb(0, 0, 0);
+}
+
+.btn_black {
+    background-color: #222222;
+    color: rgb(255, 255, 255);
+}
+.btn_red {
+    background-color: #d81313;
+    color: rgb(255, 255, 255);
+}
+.btn_green {
+    background-color: #10be2d;
+    color: rgb(255, 255, 255);
+}
+.btn_blue {
+    background-color: #2275d4;
+    color: rgb(255, 255, 255);
+}
+
+.btn_black:hover {
+    background-color: #444444;
+    transform: scale(1.01);
+    color: rgb(202, 202, 202);
+}
+
+.btn_red:hover {
+    background-color: #830505;
+    transform: scale(1.01);
+    color: rgb(235, 235, 235);
+}
+
+.btn_green:hover {
+    background-color: #057919;
+    transform: scale(1.01);
+    color: rgb(235, 235, 235);
+}
+
+.btn_blue:hover {
+    background-color: #083892;
+    transform: scale(1.01);
+    color: rgb(235, 235, 235);
+}
+
+
+
+
+
+.round {
+    border-radius: 15px;
+}
+
+.td {
+    box-shadow: -3px 3px rgb(0, 0, 0), -2px 2px rgb(0, 0, 0), -1px 1px rgb(0, 0, 0);
+}
