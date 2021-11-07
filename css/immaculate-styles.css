@@ -80,3 +80,122 @@
 .td {
     box-shadow: -3px 3px rgb(0, 0, 0), -2px 2px rgb(0, 0, 0), -1px 1px rgb(0, 0, 0);
 }
+
+.anime-arrow {
+    border-radius: 4px;
+    background-color: #2275d4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.anime-arrow span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.prev span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.prev:hover span {
+    padding-left: 25px;
+}
+
+.prev:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+.next span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.next:hover span {
+    padding-right: 25px;
+}
+
+.next:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.anime-submit {
+    width: 270px;
+    height: 80px;
+    line-height: 80px;
+    border: 0;
+    margin-bottom: 20px;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.check-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: -40px;
+    opacity: 0;
+}
+.check-box svg{
+    width: 40px;
+    margin: 20px;
+}
+
+.submit-svg .submit-path{
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+}
+
+.submit-active {
+    background-color: #2275d4;
+    transition: 1s;
+}
+.submit-active .check-box {
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.submit-active .submit-text {
+    margin-right: 125px;
+    transition: 1s;
+}
+
+.submit-active .submit-svg .submit-path {
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}
