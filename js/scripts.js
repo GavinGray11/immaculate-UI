@@ -22,5 +22,16 @@ window.addEventListener('DOMContentLoaded', event => {
             localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
         });
     }
-
 });
+
+
+$( "#logo-btn" ).hover(
+    function() {
+        $( this ).empty();
+        $( this ).append("&lt;Immaculate-UI&gt;");
+    }, function() {
+        $( this ).empty();
+        $( this ).append("&lt;I-UI&gt;");
+    }
+  );
+

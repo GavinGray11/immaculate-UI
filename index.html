@@ -18,9 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Varela+Round&display=swap"
         rel="stylesheet">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 
 
 </head>
@@ -28,16 +27,25 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand color-primary shadow-lg p-3 mb-5">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3 font" href="index.html">Immaculate-UI</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 text-color" id="sidebarToggle" href="#!"><i
-                class="fas fa-bars"></i></button>
+            class="fas fa-bars"></i></button>
+
+        <button id="logo-btn" href="index.html">&lt;I-UI&gt;</button>
+        
+        <!-- <a class="navbar-brand logo-font" href="index.html">&lt;I-UI&gt;</a> -->
+        
+        
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
 
         </form>
         <!-- Navbar-->
+        <div>
+            <h1 id="userAccount" class="email">Please Login</h1>
+        </div>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
@@ -47,8 +55,10 @@
                     <li>
                         <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item font" href="#!">Sign in</a></li>
-                    <li><a class="dropdown-item font" href="#!">Logout</a></li>
+                    <!-- <li><a class="dropdown-item font" href="#!">Sign in</a></li> -->
+                    <li><a class="dropdown-item font" href="loginPage.html">Sign in</a></li>
+                    <!-- <li><a class="dropdown-item font" href="#!">Logout</a></li> -->
+                    <li><a class="dropdown-item font" href="#!" onclick="logout()">Logout</a></li>
                 </ul>
             </li>
         </ul>
@@ -1076,9 +1086,34 @@
     </script>
     <script src="js/scripts.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+    <script src="js/firebaseconfig.js" charset="utf-8"></script>
+    <script src="js/firebaselogin.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script>
+        var user = firebase.auth().currentUser;
+        console.log('script running');
+        console.log(localStorage["userEmail"]);
+        if(localStorage["userEmail"]) {
+            console.log(document.getElementById("userAccount").innerHTML);
+            document.getElementById("userAccount").innerHTML = "Welcome, " + localStorage["userEmail"];
+            console.log('after');
+            console.log(document.getElementById("userAccount").innerHTML);
+            
+        }
+        else {
+            console.log("user not logged in, therefore no info displayed");
+        }
+        /* console.log(user);
+        if(user != null) {
+            var email_id = user.email;
+            //alert("Welcome User : " + email_id)
+            console.log(document.getElementById("userAccount").innerHTML);
+            document.getElementById("userAccount").innerHTML = "Welcome User : " + email_id;
+        } */
 
-
+    </script>
 
 </body>
 

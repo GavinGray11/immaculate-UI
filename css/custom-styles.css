@@ -126,3 +126,83 @@ code {
   border-radius: 5px;
 }
 
+
+/* Logo Font */
+
+.logo-font {
+  font-family: bomberEscortItalic;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  text-align: left !important;
+
+  overflow:hidden;
+   -webkit-transition:width 1s;
+   transition:width 1s;
+   white-space:nowrap;
+}
+
+.logo-font:hover {
+  color: white;
+  -webkit-transition:width 1s;
+   transition:width 1s;
+}
+
+.logo-font:hover::after {
+  content:'Add new result';
+}
+
+
+/* Logo Btn */
+
+#logo-btn {
+  width:90px;
+  height:50px;
+  background-color: transparent;
+  border: transparent;
+  
+  font-family: bomberEscortItalic;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+
+  overflow:hidden;
+  -webkit-transition:width 1s;
+  transition:width 1s;
+  white-space:nowrap;
+}
+#logo-btn:hover span {
+  display:none
+}
+#logo-btn:hover {
+  width: 300px;
+  color: white;
+  -webkit-transition:width 1s;
+   transition:width 1s;
+}
+/* .logo-btn:hover::before {
+  content:"<I-UI>"
+} */
+/* .logo-btn:hover::after {
+  content:'<Immaculate-UI>';
+} */
+
+/* Email display homepage */
+.email {
+  text-align: right !important;
+  font-size: 15px;
+}
+
+
+
+
+
+@font-face {
+  font-family: spikeSpeak;
+  src: url('../font/SpikeSpeak.ttf');
+}
+
+@font-face {
+  font-family: bomberEscortItalic;
+  src: url('../font/BomberEscortItalic.otf');
+}
