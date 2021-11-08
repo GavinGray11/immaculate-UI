@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
 /* * {
@@ -199,3 +200,39 @@
     transition: 1s;
     transition-delay: 1s;
 }
+=======
+
+/* -----NAVBAR STYLES----- */
+/* Style the buttons */
+.itab {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+}
+
+.itab-links {
+  display: flex;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active-tab, .itab:hover {
+  background-color: #666;
+  color: white;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+/* -----END NAVBAR STYLES----- */
+

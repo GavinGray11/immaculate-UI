@@ -61,6 +61,7 @@ color: black;
 
 .code-color {
   color: #66fcf1;
+
 }
 
 /*---------------------------------------------------------------*/
@@ -206,3 +207,11 @@ code {
   font-family: bomberEscortItalic;
   src: url('../font/BomberEscortItalic.otf');
 }
+=======
+  font-size: 1.5vw !important;
+}
+
+.indent {
+  margin-left: 6px;
+}
+
