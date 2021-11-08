@@ -63,4 +63,9 @@ color: black;
 
 .code-color {
   color: #66fcf1;
+  font-size: 1.5vw !important;
+}
+
+.indent {
+  margin-left: 6px;
 }
