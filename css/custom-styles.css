@@ -1,10 +1,10 @@
 .color-primary {
-  background-color: #171923;
+  background-color: #171923 !important;
   color: white !important;
 }
 
 .color-secondary {
-  background-color: #41D2F2;
+  background-color: #41D2F2 ;
   color: white;
 
 }
@@ -206,3 +206,5 @@ code {
   font-family: bomberEscortItalic;
   src: url('../font/BomberEscortItalic.otf');
 }
+
+
