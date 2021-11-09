@@ -9,20 +9,6 @@
 
 }
 
-.font-home {
-  font-size: 17.9px;
-}
-
-.down-color {
-  background-color:  #171923 !important;
-  border-color: #171923 !important;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-}
-
-.down-color:hover {
-  background-color: #454855 !important;
-}
-
 .tabbers {
   color: white;
   background-color: white;

@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/loginStyle.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Immaculate-UI Login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+
+    <button onclick="unhideCreate()">Click to Create Account</button>
+  </div>
+
+  <!-- <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div> -->
+
+
+  <div id="createUser_div" class="Create-div">
+    <h3>Create an Immaculate-UI Account</h3>
+    <input type="email" placeholder="Email..." id="create_email_field" />
+    <input type="password" placeholder="Password..." id="create_password_field" />
+
+    <button onclick="createUser()">Create Account</button>
+  </div>
+
+
+
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+  <script src="js/firebaseconfig.js" charset="utf-8"></script>
+  <script src="js/firebaselogin.js"></script>
+
+</body>
+</html>
