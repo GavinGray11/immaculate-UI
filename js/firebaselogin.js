@@ -75,6 +75,13 @@ function unhideCreate() {
 
 }
 
+function unhideLogin() {
+
+  document.getElementById("createUser_div").style.display = "none";
+  document.getElementById("login_div").style.display = "block";
+
+}
+
 function logout() {
   console.log('Signing out from firebaseLogin');
   firebase.auth().signOut();
