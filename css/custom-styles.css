@@ -207,6 +207,62 @@ code {
   font-size: 15px;
 }
 
+/* disabled button styling */
+.disabled-sign {
+  color: rgb(146, 138, 138) !important;
+  pointer-events: none;
+}
+.disabled-sign:hover {
+  background-color: transparent !important;
+}
+
+
+.disabled-nav {
+  color: rgb(146, 138, 138) !important;
+  /* pointer-events: none; */
+}
+
+.wrapper-zone {
+  position: relative;
+  top: -105px;
+  right: -10px;
+  border: 3px solid red;
+  height: 30px;
+  width: 120px;
+}
+
+/* .wrapper .text {
+  position: relative;
+  visibility: hidden;
+  right: -10px;
+  top: -5px;
+  font-weight: 500;
+  transition-duration: 0.5s;
+  font-family: "Segoe UI";
+  opacity: 0;
+  z-index: 10;
+}
+
+.wrapper:hover .text {
+  visibility: visible;
+  opacity: 1;
+} */
+
+.text-hidden {
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.text-display {
+  opacity: 1;
+  /* transition-duration: 0.5s; */
+  transition-duration: 0.5s;
+}
+
+
+
+
+
 
 
 

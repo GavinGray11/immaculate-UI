@@ -61,7 +61,8 @@ function login(){
     var errorCode = error.code;
     var errorMessage = error.message;
 
-    window.alert("Error : " + errorMessage + " Email: " + userEmail + " Password " + userPass);
+    window.alert(errorMessage);
+    //window.alert('Invalid Username and/or Password');
 
     // ...
   });
@@ -86,6 +87,7 @@ function logout() {
   console.log('Signing out from firebaseLogin');
   firebase.auth().signOut();
   localStorage.removeItem("userEmail");
+  window.location.reload();
   document.getElementById("userAccount").innerHTML = "Please Login";
 }
 
@@ -93,15 +95,23 @@ function createUser(){
 
   var userEmail = document.getElementById("create_email_field").value;
   var userPass = document.getElementById("create_password_field").value;
+  var userPassConfirm = document.getElementById("create_password_confirmation").value;
 
-  firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
+  if(userPass == userPassConfirm) {
+    firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+  
+      window.alert(errorMessage);
+  
+      // ...
+    });
+  }
+  else {
+    window.alert('Passwords do not match');
+  }
 
-    window.alert("Error : " + errorMessage + " Email: " + userEmail + " Password " + userPass);
-
-    // ...
-  });
+  
 
 }

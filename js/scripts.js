@@ -35,3 +35,16 @@ $( "#logo-btn" ).hover(
     }
   );
 
+// if(!localStorage["userEmail"]) {
+//     $( "#rbtn" ).hover(
+//         function() {
+//             $( "#rtext" ).removeClass("text-hidden");
+//             $( "#rtext" ).addClass("text-display");
+//         }, function() {
+//             $( "#rtext" ).removeClass("text-display");
+//             $( "#rtext" ).addClass("text-hidden");
+//         }
+//       );
+// }
+ 
+

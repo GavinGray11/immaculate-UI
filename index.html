@@ -57,9 +57,9 @@
                         <hr class="dropdown-divider" />
                     </li>
                     <!-- <li><a class="dropdown-item font" href="#!">Sign in</a></li> -->
-                    <li><a class="dropdown-item font" href="loginPage.html">Sign in</a></li>
+                    <li><a id="rbtn3" class="dropdown-item font" href="loginPage.html">Sign in</a></li>
                     <!-- <li><a class="dropdown-item font" href="#!">Logout</a></li> -->
-                    <li><a class="dropdown-item font" href="#!" onclick="logout()">Logout</a></li>
+                    <li><a id="rbtn2" class="dropdown-item font disabled-sign" href="#!" onclick="logout()">Logout</a></li>
                 </ul>
             </li>
         </ul>
@@ -107,14 +107,31 @@
                             type="button" role="tab" aria-controls="profile" aria-selected="false">
                             Forms
                         </button>
-                        <button class="nav-link font" id="profile-tab" data-bs-toggle="tab" data-bs-target="#component6"
+                        <!-- <div id="disabled-wrap" class="wrapper">
+                            <button class="nav-link font disabled-nav" id="rbtn" data-bs-toggle="tab" data-bs-target="#component6"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">
+                            *Animations
+                            </button>
+                            <p id="disabled-text" class="text">Sign In for exclusive features</p>
+                        </div> -->
+                        
+                        <!-- <div id="rbtn-wrap">
+                            <button class="nav-link font disabled-nav" id="rbtn" data-bs-toggle="tab" data-bs-target="#component6"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">
+                            *Animations
+                            </button>
+                        </div> -->
+
+
+                        <button class="nav-link font disabled-nav" id="rbtn" data-bs-toggle="tab" data-bs-target="#component6"
                             type="button" role="tab" aria-controls="profile" aria-selected="false">
                             *Animations
                         </button>
+                        <p id="rtext" class="text-display"> Sign In for exclusive features </p>
+                        <!-- <div id="rbtn-wrap" class="wrapper-zone"></div> -->
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-
                             </nav>
                         </div>
 
@@ -904,8 +921,41 @@
             console.log('after');
             console.log(document.getElementById("userAccount").innerHTML);
 
+            
+
+            document.getElementById("rbtn").disabled = false;
+
+            document.getElementById("rbtn").classList.remove("disabled-nav");
+            
+            document.getElementById("rbtn2").setAttribute("onclick","logout()");
+            document.getElementById("rbtn2").classList.remove("disabled-sign");
+
+            document.getElementById("rbtn3").setAttribute("href","");
+            document.getElementById("rbtn3").classList.add("disabled-sign");
+
+            document.getElementById("rtext").classList.add("text-hidden");
+            document.getElementById("rtext").classList.remove("text-display");
+
         } else {
-            console.log("user not logged in, therefore no info displayed");
+            document.getElementById("rbtn").disabled = true;
+ 
+            document.getElementById("rbtn").classList.add("disabled-nav");
+
+            document.getElementById("rbtn2").setAttribute("onclick","");
+            document.getElementById("rbtn2").classList.add("disabled-sign");
+
+            document.getElementById("rbtn3").setAttribute("href","loginPage.html");
+            document.getElementById("rbtn3").classList.remove("disabled-sign");
+            
+            document.getElementById("disabled-text").classList.remove("text-disabled");
+            document.getElementById("disabled-text").classList.add("text");
+
+            document.getElementById("disabled-text").classList.add("text-disabled");
+            document.getElementById("disabled-text").classList.remove("text");
+
+            document.getElementById("rtext").classList.remove("text-hidden");
+            document.getElementById("rtext").classList.add("text-display");
+            //console.log("user not logged in, therefore no info displayed");
         }
         /* console.log(user);
         if(user != null) {
