@@ -747,3 +747,21 @@
     }
 }
 
+/* CARD */
+
+.imma-container  {
+    display: flex;
+}
+
+.imma-card {
+    float: left;
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    border: 3px solid rgb(167, 167, 167);
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+    border-radius: 25px;
+    box-shadow: 2px 2px 20px;
+}
