@@ -1,19 +1,28 @@
 <html>
+
 <head>
   <title>Firebase Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/loginStyle.css" />
+  <link href="css/custom-styles.css" rel="stylesheet" />
 </head>
+
 <body>
 
   <div id="login_div" class="main-div">
-    <h3>Immaculate-UI Login</h3>
+    <div class="container font">
+      <h3 class="d-flex justify-content-center font m-5">Immaculate-UI</h3>
+      <h2 class="d-flex justify-content-center font m-5">Login</h2>
+    </div>
+
     <input type="email" placeholder="Email..." id="email_field" />
     <input type="password" placeholder="Password..." id="password_field" />
 
-    <button onclick="login()">Login to Account</button>
+    <button class="log-button" onclick="login()">Login to Account</button>
 
-    <button onclick="unhideCreate()">Click to Create Account</button>
+    <button class="log-button" onclick="unhideCreate()">Click to Create Account</button>
   </div>
 
   <!-- <div id="user_div" class="loggedin-div">
@@ -24,14 +33,17 @@
 
 
   <div id="createUser_div" class="Create-div">
-    <h3>Create an Immaculate-UI Account</h3>
+    <div class="container font">
+      <h3 class="d-flex justify-content-center font m-5">Create an Immaculate account</h3>
+      <h2 class="d-flex justify-content-center font m-5">Sign Up</h2>
+    </div>
     <input type="email" placeholder="Email..." id="create_email_field" />
     <input type="password" placeholder="Password..." id="create_password_field" />
     <input type="password" placeholder="Confirm Password..." id="create_password_confirmation" />
 
-    <button onclick="createUser()">Create Account</button>
+    <button class="log-button" onclick="createUser()">Create Account</button>
 
-    <button onclick="unhideLogin()">Login with Existing Account</button>
+    <button class="log-button" onclick="unhideLogin()">Login with Existing Account</button>
   </div>
 
 
@@ -40,6 +52,9 @@
   <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
   <script src="js/firebaseconfig.js" charset="utf-8"></script>
   <script src="js/firebaselogin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+  </script>
 
 </body>
+
 </html>
